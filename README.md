@@ -2,7 +2,7 @@
 
 [Hier geht es direkt zum Backlog](https://github.com/smatplacid/ts-berlin-23-11/blob/main/_Dokumentation/log.md)
 
-Es wird eine Online-Notiz-App entwickelt mit den Techniken:
+## Es wird eine Online-Notiz-App entwickelt mit den Techniken:
 
 - Figma
 - VSC
@@ -10,13 +10,18 @@ Es wird eine Online-Notiz-App entwickelt mit den Techniken:
 - JS / HTML / CSS
 - GitHub
 
-Teilnehmer:
-- Carsten Kalbe
-- Chinemerem Chukwuemeka
-- Christoph Jurkun
-- Muhib Elchabti
-- Roman Hanzlik
-- Rosa Flores Lopez
-- Sarah Mia Theil Born
+## Teilnehmer:
+
+Product Owner
+  : me
+
+
+- Carsten Kalbe (Developer)
+- Chinemerem Chukwuemeka (Product Owner)
+- Christoph Jurkun (Master)
+- Muhib Elchabti (Developer)
+- Roman Hanzlik (Developer)
+- Rosa Flores Lopez (Developer)
+- Sarah Mia Theil Born (Developer)
 
 ## Projekt: Online Notiz
