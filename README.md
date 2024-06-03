@@ -18,10 +18,4 @@ Es wird eine Datenbank aufgebaut, mit allen Themen, die wir bis Juni 2024 im Tec
 
 ## Teilnehmer:
 
-- Carsten Kalbe (Developer)
-- Chinemerem Chukwuemeka (Product Owner)
-- Christoph Jurkun (Master)
-- Muhib Elchabti (Developer)
-- Roman Hanzlik (Developer)
-- Rosa Flores Lopez (Developer)
-- Sarah Mia Theil Born (Developer)
+Alle Teilnehmer sind [hier](https://github.com/smatplacid/ts-berlin-23-11/blob/main/TEAM.md) aufgelistet.
