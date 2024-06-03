@@ -5,13 +5,3 @@
 ## Projekt: Online Notiz / Knowledge Base
 
 Es wird eine Datenbank aufgebaut, mit allen Themen, die wir bis Juni 2024 im TechStarter Unterricht hatten.
-
-## Benutzte Techniken / Anwendungen:
-
-- Scrum
-- Figma
-- VS Code
-- MySQL
-- JS / HTML / CSS
-- GitHub
-- Google Kalender als Gantt-Chart
