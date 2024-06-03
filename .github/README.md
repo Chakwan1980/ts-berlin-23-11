@@ -1,6 +1,6 @@
 # Projektwoche im Juni 2024 | Kurs: TS-Berlin-23-11
 
-[Hier geht es direkt zum Product Backlog](https://github.com/smatplacid/ts-berlin-23-11/blob/main/_Dokumentation/log.md)
+[Hier geht es direkt zum Product Backlog](https://github.com/smatplacid/ts-berlin-23-11/blob/main/.github/DOCUMENTATION.md)
 
 ## Projekt: Online Notiz / Knowledge Base
 
