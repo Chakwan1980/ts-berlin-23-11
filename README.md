@@ -13,7 +13,7 @@
 ## Teilnehmer:
 
 Product Owner
-  : me
+: me
 
 
 - Carsten Kalbe (Developer)
