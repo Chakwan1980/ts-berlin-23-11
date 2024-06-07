@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "cd client && npm install && cd ../server && npm install",
-    "start": "npm run server",
-    "server": "cd server && nodemon app.js",
-    "client": "cd client && npm start"
+    "start:frontend": "react-scripts start",
+    "start:backend": "node server.js",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
   "keywords": [],
   "author": "",
