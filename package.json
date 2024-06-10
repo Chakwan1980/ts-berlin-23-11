@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:client": "react-scripts start",
-    "start:server": "node server.js",
-    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    "app_client": "cd client && npm start",
+    "app_server": "cd server && npm start",
+    "start": "concurrently \"npm run app_client\" \"npm run app_server\" "
   },
   "keywords": [],
   "author": "",
