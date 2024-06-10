@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+
 // Set up mongoose connection
 const mongoose = require("mongoose"); //  Dies importiert das mongoose-Modul, das eine objektorientierte Modellierung für MongoDB in Node.js ermöglicht.
 mongoose.set("strictQuery", false); // Diese Zeile setzt die Mongoose-Einstellung "strictQuery" auf false. Diese Einstellung beeinflusst das Verhalten von Mongoose beim Verarbeiten von Abfragen.
