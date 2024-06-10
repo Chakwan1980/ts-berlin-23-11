@@ -10,11 +10,14 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Verbindung
-mongoose.connect('mongodb://localhost:27017/knowledge-base', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-  
+const dev_db_url =
+  "mongodb+srv://christoph.jurkun:BWCkoSUW3jfpsMQ0@knowledgebase.jq33jmj.mongodb.net/?retryWrites=true";
+const mongoDB = process.env.MONGODB_URI || dev_db_url;
+
+main().catch((err) => console.log(err)); // Diese Zeile ruft die main-Funktion auf und fängt Fehler ab, die während der Ausführung auftreten können.
+async function main() { // Dies definiert eine asynchrone Funktion namens main, die verwendet wird, um den Hauptteil deiner Anwendung auszuführen
+  await mongoose.connect(mongoDB); // In dieser Zeile wird eine Verbindung zur MongoDB-Datenbank hergestellt. mongoose.connect() ist eine Funktion von Mongoose, die eine Verbindung zur MongoDB-Datenbank herstellt.
+}
 const db = mongoose.connection;
 db.once('open', () => {
   console.log('MongoDB connected');
