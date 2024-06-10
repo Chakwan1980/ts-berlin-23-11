@@ -1,5 +1,4 @@
 ## Teilnehmer:
-
 - Christoph Jurkun (Master)
 - Carsten Kalbe (Developer)
 - Roman Hanzlik (Developer)
