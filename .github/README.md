@@ -7,6 +7,7 @@ Es wird eine Knowledge-Base mit einer Datenbank programmiert, mit allen Themen, 
 # ZUM STARTEN:
 
 Im Terminal > root "npm start" ausführen, es werden beide Applikationen gestartet.\
+
 Client - läuft auf Port :3000\
 Server - läuft auf Port :5000
 
