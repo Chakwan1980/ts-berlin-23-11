@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './router/Home';
 import About from './router/About';
+import RedirectToHome from './RedirectToHome';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,6 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+
+        <Route path="*" element={<RedirectToHome />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,13 @@
+:root {
+  --primary-light: #cbda75;
+  --primary: #aec23c;
+  --primary-dark: #9db71e;
+  --secondary: blue;
+  --neutral-light: #eaeaf3;
+  --neutral: #b5b5b5;
+  --neutral-dark: #707174;
+}
+
+body {
+  background: red;
+}/*# sourceMappingURL=index.css.map */
