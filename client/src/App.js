@@ -1,8 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+
 import Home from './router/Home';
 import About from './router/About';
-import RedirectToHome from './RedirectToHome';
+import RedirectToHome from './router/RedirectToHome';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -41,3 +43,5 @@ function App() {
 // }
 
 export default App;
+
+// Comment:: haha

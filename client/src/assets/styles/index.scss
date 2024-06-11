@@ -1,0 +1,18 @@
+@use "./_variables.scss" as *;
+
+body {
+    background: var(--neutral-light);
+    margin: 0;
+}
+
+// MAIN
+#MainWrapper {
+    width: 100%;
+
+    &Inner {
+        width: 100%;
+        max-width: #{$page-width}px;
+    }
+}
+
+// HEADER   
