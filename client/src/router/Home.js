@@ -4,9 +4,13 @@ import './Home.css';
 
 function Home() {
     return (
-        <div>
-            <h1>Startseite</h1>
-            <p>Willkommen auf der Startseite!</p>
+        <div id="HomeWrapper">
+        <div class="topic topic-wrapper linux">
+        <div class="topic topic-name">
+              <p>Linux</p>
+        </div>
+        <img src="../src/assets/images/linux-button.svg" alt="../" />
+        </div>
         </div>
     );
 }

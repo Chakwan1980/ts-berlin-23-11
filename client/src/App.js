@@ -15,12 +15,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
 
-        <Route path="*" element={<RedirectToHome />} />
       </Routes>
     </div>
   );
-}
-
+  }
+  
+  // <Route path="*" element={<RedirectToHome />} />
 // function App() {
 //   return (
 //     <div className="App">
