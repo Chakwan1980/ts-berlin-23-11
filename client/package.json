@@ -1,21 +1,29 @@
 {
-  "name": "client",
-  "version": "0.1.0",
+  "name": "techknowledgebase",
+  "version": "11.06.2024",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
     "customize-cra": "^1.0.0",
     "handlebars": "^4.7.8",
     "handlebars-loader": "^1.7.3",
+    "latest": "^0.2.0",
     "react": "^18.3.1",
     "react-app-rewired": "^2.2.1",
     "react-dom": "^18.3.1",
     "react-native-mime-types": "^2.5.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^4.1.1",
+    "@babel/plugin-transform-private-methods": "^7.24.7",
+    "@babel/plugin-transform-numeric-separator": "^7.24.7",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
+    "@babel/plugin-transform-class-properties": "^7.24.7",
+    "@babel/plugin-transform-optional-chaining": "^7.24.7",
+    "@jridgewell/sourcemap-codec": "^1.4.15",
+    "@rollup/plugin-terser": "^0.4.4"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -42,6 +50,9 @@
     ]
   },
   "devDependencies": {
-    "html-loader": "^5.0.0"
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.0.0",
+    "style-loader": "^4.0.0"
   }
 }
