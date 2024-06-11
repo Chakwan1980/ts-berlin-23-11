@@ -1,8 +1,8 @@
 # ZUM STARTEN:
 
-Im root einfach "npm start" ausführen, es werden beide Applikationen gestartet.\
+Im Terminal > root "npm start" ausführen, es werden beide Applikationen gestartet.\
 Client - läuft auf Port :3000\
-Server - läuft auf Port :5000\
+Server - läuft auf Port :5000
 
 
 # QUELLEN:
