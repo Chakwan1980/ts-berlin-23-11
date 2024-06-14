@@ -1,14 +1,38 @@
-:root {
-    --primary-light: #cbda75;
-    --primary: #aec23c;
-    --primary-dark: #9db71e;
+:root { // Colors:
+    --primary-l20: #c5c585; // #cbda75;
+    --primary-l40: #d3d4a4;
+    --primary: #b6b767; // #aec23c;
+    --primary-d20: #929252; //#9db71e;
+    --primary-d40: #6d6e3e; 
 
     --secondary: blue;
 
     --neutral-light: #eaeaf3;
     --neutral: #b5b5b5;
     --neutral-dark: #707174;
+
+    --linux-primary: #1a0d6f;
+    --linux-primary-alpha:#1a0d6fb3;
+    --linux-secondary: #9c1121;
+    --linux-secondary-alpha:#9c1123b3;
+
+    --python-primary:#316994;
+    --python-secondary:#F7C639;
+
+    --aws-primary: #EAA361;
+    --aws-secondary: #FAF9F6;
+
+}
+
+:root { // Dimensions:    
+    --topic-dimension: 200px;
+    --topic-image: 170px;
+}
+
+:root { // Dimensions:    
+    --space-m: clamp(2rem, 1.286rem + 1.905vw, 3rem);
 }
 
 
 $page-width: 1440;
+$page-width-px: #{$page-width}px;

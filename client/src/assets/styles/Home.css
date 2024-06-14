@@ -1,0 +1,174 @@
+:root {
+  --primary-l20: #c5c585;
+  --primary-l40: #d3d4a4;
+  --primary: #b6b767;
+  --primary-d20: #929252;
+  --primary-d40: #6d6e3e;
+  --secondary: blue;
+  --neutral-light: #eaeaf3;
+  --neutral: #b5b5b5;
+  --neutral-dark: #707174;
+  --linux-primary: #1a0d6f;
+  --linux-primary-alpha:#1a0d6fb3;
+  --linux-secondary: #9c1121;
+  --linux-secondary-alpha:#9c1123b3;
+  --python-primary:#316994;
+  --python-secondary:#F7C639;
+  --aws-primary: #EAA361;
+  --aws-secondary: #FAF9F6;
+}
+
+:root {
+  --topic-dimension: 200px;
+  --topic-image: 170px;
+}
+
+:root {
+  --space-m: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+}
+
+.karma-light {
+  font-family: "Karma", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.karma-regular {
+  font-family: "Karma", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karma-medium {
+  font-family: "Karma", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.karma-semibold {
+  font-family: "Karma", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.karma-bold {
+  font-family: "Karma", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#HomeWrapperInner {
+  width: 100%;
+}
+
+.topic-wrapper {
+  width: var(--topic-dimension);
+  height: var(--topic-dimension);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.topic-wrapper:hover .topic-name p {
+  text-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.topic-name {
+  position: absolute;
+  z-index: 1;
+}
+.topic-name p {
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 2px black;
+  transition: text-shadow 0.4s ease;
+}
+.topic-image {
+  width: var(--topic-image);
+  height: var(--topic-image);
+}
+.topic .topic-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topic .topic-image:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.topic.linux .topic-image.overlay {
+  background: var(--linux-primary-alpha);
+  background: linear-gradient(145deg, var(--linux-primary) 0%, var(--linux-secondary) 100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.topic.linux .topic-image img {
+  transition: transform 0.3s, opacity 0.3s;
+  transform: scale(0.6) rotate(25deg);
+  opacity: 0.4;
+  height: auto;
+  width: var(--topic-image);
+}
+.topic.linux:hover .topic-image.overlay {
+  opacity: 1;
+}
+.topic.linux:hover .topic-image img {
+  transition: transform 0.3s, opacity 0.3s, rotate(0deg);
+  transform: rotate(0deg);
+  width: var(--topic-image);
+  height: var(--topic-image);
+  opacity: 0.2;
+}
+.topic.python .topic-image.overlay {
+  background: var(--python-primary-alpha);
+  background: linear-gradient(145deg, var(--python-primary) 0%, var(--python-secondary) 100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.topic.python .topic-image img {
+  transition: transform 0.3s, opacity 0.3s;
+  transform: scale(0.6) rotate(25deg);
+  opacity: 0.4;
+  height: auto;
+  width: var(--topic-image);
+}
+.topic.python:hover .topic-image.overlay {
+  opacity: 1;
+}
+.topic.python:hover .topic-image img {
+  transition: transform 0.3s, opacity 0.3s, rotate(0deg);
+  transform: rotate(0deg);
+  width: var(--topic-image);
+  height: var(--topic-image);
+  opacity: 0.2;
+}
+.topic.aws .topic-image.overlay {
+  background: var(--aws-primary-alpha);
+  background: linear-gradient(145deg, var(--aws-primary) 0%, var(--aws-secondary) 100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.topic.aws .topic-image img {
+  transition: transform 0.3s, opacity 0.3s;
+  transform: scale(0.6) rotate(25deg);
+  opacity: 0.4;
+  height: auto;
+  width: var(--topic-image);
+}
+.topic.aws:hover .topic-image.overlay {
+  opacity: 1;
+}
+.topic.aws:hover .topic-image img {
+  transition: transform 0.3s, opacity 0.3s, rotate(0deg);
+  transform: rotate(0deg);
+  width: var(--topic-image);
+  height: var(--topic-image);
+  opacity: 0.2;
+}/*# sourceMappingURL=Home.css.map */

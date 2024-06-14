@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js', // Passe den Pfad zu deinem Haupteinstiegspunkt an
+  entry: './src/App.js', // Passe den Pfad zu deinem Haupteinstiegspunkt an
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -20,7 +20,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'], // Erlaubt das Weglassen der Dateierweiterungen bei Importen
+    extensions: ['.js', '.jsx', 'html'], // Erlaubt das Weglassen der Dateierweiterungen bei Importen
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

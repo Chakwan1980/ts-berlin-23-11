@@ -1,13 +1,82 @@
 @use "./_variables.scss" as *;
+@use "./_globals.scss" as *;
 
+// GENERAL
 body {
-    background: var(--neutral-light);
+    background-color: var(--primary);
     margin: 0;
+}
+
+// HEADER
+#MainHeader {
+    display: flex;
+    font-family: "Karma", serif;
+    padding: 1em 0;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    background-color: red;
+
+    &Inner{
+        background-color: blue;
+        width: 100% ;
+        max-width: $page-width-px;
+    }
+
+
+    >div{
+        display: flex;
+        align-items: center;
+        // text-align: center;
+        justify-content: center;
+    }
+
+    &_left {
+        flex: 1 1 25%;
+        // flex-basis: 25%;
+        justify-content: flex-start !important;
+        text-align: left;
+    }
+
+    &_mid {
+        flex: 2 1 auto;
+        flex-basis: 50%;
+        gap: 2em;
+
+        h1 {
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+            letter-spacing: 5px;
+        }
+    }
+
+    &_right {
+        flex: 1 1 25%;
+        // flex-basis: 25%;
+        justify-content: flex-end !important;
+        text-align: right;
+    }
+
+    #MainBrand {
+        color: white;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        letter-spacing: 5px;
+    }
+
+    #MainLogo {
+        svg {
+            height: 100px;
+            fill: white;
+            filter: drop-shadow(0 0 5px rgb(0 0 0 / 0.5));
+        }
+    }
+
+    #MainHeaderInner {}
 }
 
 // MAIN
 #MainWrapper {
     width: 100%;
+    // max-width: $page-width-px;
+    margin: auto;
 
     &Inner {
         width: 100%;
@@ -15,4 +84,60 @@ body {
     }
 }
 
-// HEADER   
+#MainContent {
+    background: var(--neutral-light);
+    max-width: $page-width-px;
+    margin: auto;
+}
+
+// FOOTER
+
+
+/*******************************************
+ * REWRITTEN
+*******************************************/
+
+.main {
+    &-wrapper {
+        width: 100%;
+        max-width: calc($page-width-px - clamp(1rem, -0.25rem + 3.333vw, 2.75rem));
+        margin: auto;
+    }
+
+    &-header  {
+        display: flex;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        &-left, &-right{
+            flex: 1 1 25%;
+
+            svg {
+                width: 70px;
+                height: auto;
+                fill: #8c843d;
+            }
+        }
+
+        &-mid {
+            flex: 1 1 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-m);
+
+            svg {
+                width: auto;
+                height: 100px;
+            }
+        }
+    }
+
+    &-content {
+        background-color: var(--neutral-light);
+        padding: clamp(1rem, -0.25rem + 3.333vw, 2.75rem);
+    }
+
+    &-footer {}
+}

@@ -8,7 +8,9 @@
 - GitHub
 - Google Kalender als Gantt-Chart
 
-### Links ###
+### Links
 
 - SVG Optimizer [svgomg](https://svgomg.net/)
 - SVG Beautifier [codebeautify](https://codebeautify.org/svg-formatter-beautifier)
+  
+- [Clamp calculator](https://www.marcbacon.com/tools/clamp-calculator/)

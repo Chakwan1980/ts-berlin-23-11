@@ -5,7 +5,7 @@ import Home from './router/Home';
 import About from './router/About';
 import RedirectToHome from './router/RedirectToHome';
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -15,12 +15,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
 
+        <Route path="*" element={<RedirectToHome />} />
       </Routes>
     </div>
   );
   }
   
   // <Route path="*" element={<RedirectToHome />} />
+
+
 // function App() {
 //   return (
 //     <div className="App">

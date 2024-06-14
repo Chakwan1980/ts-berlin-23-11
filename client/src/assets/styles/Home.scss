@@ -1,0 +1,79 @@
+@use "./_variables.scss" as *;
+@use "./_globals.scss" as *;
+@use "./_mixins.scss" as *;
+
+#HomeWrapper{}
+
+#HomeWrapperInner {
+    width: 100%;
+}
+
+.topic {
+    &-wrapper {
+        width: var(--topic-dimension);
+        height: var(--topic-dimension);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            .topic {
+                &-image {
+                }
+
+                &-name {
+                    p {
+                        text-shadow:
+                            0 0 2px black,
+                            0 0 5px black,
+                            0 0 10px rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+        }
+    }
+
+    &-name {
+        position: absolute;
+        z-index: 1;
+
+        p {
+            color: white;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0 0 2px black;
+            transition: text-shadow 0.4s ease;
+        }
+    }
+
+    &-image {
+        width: var(--topic-image);
+        height: var(--topic-image);
+    }
+
+    .topic-image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+
+    }
+
+    @include topic-hover(linux);
+    @include topic-hover(python);
+    @include topic-hover(aws);
+
+}

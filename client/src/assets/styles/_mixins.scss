@@ -1,0 +1,54 @@
+@mixin topic-hover($name) {
+    &.#{$name} {
+
+        // NORMAL
+        .topic-image {
+                
+            &.overlay {
+                background: var(--#{$name}-primary-alpha);
+                background: linear-gradient(
+                    145deg, 
+                    var(--#{$name}-primary) 0%, 
+                    var(--#{$name}-secondary) 100%
+                );
+                opacity: .7;
+                transition: opacity .3s ease;
+            }
+
+            img {
+                transition:
+                    transform 0.3s,
+                    opacity 0.3s;
+
+                transform: scale(0.6) rotate(25deg);
+
+                opacity: 0.4;
+                height: auto;
+                width: var(--topic-image);
+            }
+        }
+        
+        // HOVER
+        &:hover {
+            .topic-image {
+
+                &.overlay {
+                    opacity: 1;
+                }
+                
+                img {
+                    transition:
+                        transform 0.3s,
+                        opacity 0.3s,
+                        rotate(0deg);
+
+                    transform: rotate(0deg);
+
+                    width: var(--topic-image);
+                    height: var(--topic-image);
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+}
