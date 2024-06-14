@@ -154,9 +154,8 @@ body {
   justify-content: flex-end;
 }
 .main-header-mid {
-  flex: 1 1 50%;
+  flex-basis: 50%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -169,16 +168,17 @@ body {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
   margin: 0;
 }
-.main-header-mid.logo {
+.main-header-logo {
+  border: 1px solid white;
   mix-blend-mode: overlay;
   background: var(--primary);
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  aspect-ratio: 1;
+  height: 70px;
 }
-.main-header-mid.logo svg {
-  width: auto;
-  height: 100px;
+.main-header-logo svg {
+  width: 100%;
+  height: auto;
   fill: white;
 }
 .main-content {

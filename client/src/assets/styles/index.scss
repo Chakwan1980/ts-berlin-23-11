@@ -130,9 +130,10 @@ body {
         }
 
         &-mid {
-            flex: 1 1 50%;
+            // flex: 1 1 50%;
+            flex-basis: 50%;
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 1rem; //var(--space-m);
@@ -146,21 +147,28 @@ body {
                 margin: 0;
             }   
 
-            &.logo {
+            }
+
+            &-logo {
+                border:1px solid white;
                 mix-blend-mode: overlay;
                 background: var(--primary);
                 border-radius: 50%;
-                width: 100px;
-                height: 100px;
-
+                // width: 100px;
+                // height: 100px;
+                aspect-ratio: 1;
+                height: 70px;
+    
                 svg {
-                    width: auto;
-                    height: 100px;
+                    width: 100%;
+                    height: auto;
                     fill: white;
                 }
-            }
         }
+
     }
+
+
 
     &-content {
         background-color: var(--neutral-light);
