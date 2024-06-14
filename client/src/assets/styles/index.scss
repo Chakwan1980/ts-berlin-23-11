@@ -16,14 +16,13 @@ body {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     background-color: red;
 
-    &Inner{
+    &Inner {
         background-color: blue;
-        width: 100% ;
+        width: 100%;
         max-width: $page-width-px;
     }
 
-
-    >div{
+    > div {
         display: flex;
         align-items: center;
         // text-align: center;
@@ -69,7 +68,8 @@ body {
         }
     }
 
-    #MainHeaderInner {}
+    #MainHeaderInner {
+    }
 }
 
 // MAIN
@@ -92,7 +92,6 @@ body {
 
 // FOOTER
 
-
 /*******************************************
  * REWRITTEN
 *******************************************/
@@ -104,14 +103,16 @@ body {
         margin: auto;
     }
 
-    &-header  {
+    &-header {
         display: flex;
         align-items: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
 
-        &-left, &-right{
+        &-left,
+        &-right {
             flex: 1 1 25%;
+            display: flex;
 
             svg {
                 width: 70px;
@@ -120,16 +121,43 @@ body {
             }
         }
 
+        &-left {
+            justify-content: flex-start;
+        }
+
+        &-right {
+            justify-content: flex-end;
+        }
+
         &-mid {
             flex: 1 1 50%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: var(--space-m);
+            gap: 1rem; //var(--space-m);
 
-            svg {
-                width: auto;
+            p {
+                color: white;
+                font-family: 'Karma', serif;
+                font-size: clamp(1rem, -0.25rem + 3.333vw, 2.75rem);
+                letter-spacing: 5px;
+                text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+                margin: 0;
+            }   
+
+            &.logo {
+                mix-blend-mode: overlay;
+                background: var(--primary);
+                border-radius: 50%;
+                width: 100px;
                 height: 100px;
+
+                svg {
+                    width: auto;
+                    height: 100px;
+                    fill: white;
+                }
             }
         }
     }
@@ -139,5 +167,6 @@ body {
         padding: clamp(1rem, -0.25rem + 3.333vw, 2.75rem);
     }
 
-    &-footer {}
+    &-footer {
+    }
 }

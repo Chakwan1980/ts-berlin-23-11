@@ -140,22 +140,46 @@ body {
 }
 .main-header-left, .main-header-right {
   flex: 1 1 25%;
+  display: flex;
 }
 .main-header-left svg, .main-header-right svg {
   width: 70px;
   height: auto;
   fill: #8c843d;
 }
+.main-header-left {
+  justify-content: flex-start;
+}
+.main-header-right {
+  justify-content: flex-end;
+}
 .main-header-mid {
   flex: 1 1 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--space-m);
+  gap: 1rem;
 }
-.main-header-mid svg {
+.main-header-mid p {
+  color: white;
+  font-family: "Karma", serif;
+  font-size: clamp(1rem, -0.25rem + 3.333vw, 2.75rem);
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+.main-header-mid.logo {
+  mix-blend-mode: overlay;
+  background: var(--primary);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.main-header-mid.logo svg {
   width: auto;
   height: 100px;
+  fill: white;
 }
 .main-content {
   background-color: var(--neutral-light);
