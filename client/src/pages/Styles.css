@@ -1,0 +1,42 @@
+.div{
+    background-color: white;
+    padding: 0;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center; /* Distribución de espacio alrededor de los elementos */
+    align-items:flex-start; /* Alineación vertical centrada */
+     display: grid;
+    grid-template-columns: repeat(auto-fill,230px);
+    gap:40px;
+    padding: 40px;
+    justify-content: center;
+    
+}
+
+.div-inhalt {
+    margin-bottom: 10px; /* Ajusta el margen según necesites */
+}
+
+.button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    width: 300px; /* Ancho del botón */
+    height:300px; /* Alto del botón, igual que el ancho para hacerlo circular */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Hacer el botón redondo */
+    font-size: 25px; /* Tamaño del texto */
+    display:flexbox; /* Asegurar que el botón mantenga su forma */
+    text-align: center; /* Centrar el texto */
+    line-height: 100px; /* Alinear el texto verticalmente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color */
+
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

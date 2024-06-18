@@ -20,11 +20,12 @@
     "handlebars-loader": "^1.7.3",
     "latest": "^0.2.0",
     "react": "^18.3.1",
-    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
     "react-native-mime-types": "^2.5.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.11",
     "svgo": "^3.3.2",
     "web-vitals": "^4.1.1"
   },
@@ -56,6 +57,7 @@
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
     "html-loader": "^5.0.0",
+    "react-app-rewired": "^2.2.1",
     "style-loader": "^4.0.0"
   }
 }
